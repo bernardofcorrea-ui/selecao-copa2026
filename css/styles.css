@@ -1,26 +1,153 @@
-body{
-    background-color: rgb(71, 137, 212);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     color: aliceblue;
+    background-image: url("https://i.imgur.com/bohevMP.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
 }
-header{
-    background-color: rgb(0, 81, 255);
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#logo{
-    float: right;
-    margin: 10px;
+
+.glass-card {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.603);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(161, 161, 161, 0.527);
+  position: relative;
+  overflow: hidden;
 }
-#nav{
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.logo{
     float: left;
+    margin-right: 15px;
+}
+
+#logo{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 80px;
+}
+
+.navegacao{
+    float: left;
+}
+
+.titulos{
+    overflow: hidden; 
 }
 #titulo{
     float: left;
-    margin: 10px;
+    width: auto;
+    height: 0px;
+    font-weight: normal;
+    font-size: 1.75rem;
+}
+#subtitulo{
+    float: left;
+    width: auto;
+    color: rgb(177, 177, 177);
+    font-size: 0.8rem;
+    clear: left;
+    font-weight: lighter;
 }
 
-.ClearFix:before, .ClearFix:after {
-      height: 0rem;
+#convocados{
+    clear: both;
+}
 
-      content: '';
-      display: block;
-      clear: both;
+.glass-divider {
+  border: none;
+  height: 1px;
+  margin: 24px 0;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+.divider {
+  height: 2px;
+  margin: 30px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.8),
+      transparent
+    );
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.4),
+    0 0 20px rgba(173,216,230,0.2);
+}
+
+.convocados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+    list-style-position: inside;
+    font-size: larger;
+    text-align: center;
+}
+
+#foto{
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: 15%;
+    border-radius: 5%;
+    align-items: center;
 }
