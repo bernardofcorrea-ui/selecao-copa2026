@@ -3,50 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção Coba Prasil 2026 Brasileira</title>
+    <title>Seleção Copa Brasil 2026 Brasileira</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="container">
-<div class="glass-card">
-    <header class="cabeca">
-        <div class="logo">
-            <img src="img/logo_cbf.png" id="logo">
-        </div>
- 
-        <div class="titulos">
-            <h2 id="titulo">Seleção Brasileira</h2>
-            <h3 id="subtitulo">Copa do Mundo FIFA 2026™</h3>
-        </div>
-        <div class="navegacao">
-            <nav>
+<body>
+<div class="container">
+    <div class="glass-card">
+      <header class="cabeca">
+         <div class="logo">
+                <img src="img/logo_cbf.png" id="logo">
+            </div>
+         <div class="titulos">
+                <h2 id="titulo">Seleção Brasileira</h2>
+                <h3 id="subtitulo">Copa do Mundo FIFA 2026™</h3>
+           </div>
+        </header>
 
-            </nav>
-        </div>
-    </header>
+    <div class="glass-divider"></div>
 
-    <div class="glass-divider"> </div>
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <ul class="nav-links">
+                <li><a href="#convocados" class="nav-link active" data-section="convocados">Convocados</a></li>
+                <li><a href="#agenda" class="nav-link" data-section="agenda">Agenda</a></li>
+                <li><a href="#form" class="nav-link" data-section="form">Formulário</a></li>
+            </ul>
+        </aside>
 
-    <main>
-        <section id="convocados">
-            <ol class="convocados">
-                <li>Neymar <img id="foto" src="img/jogador1.jpg"></li>
-                <li>Vinícius Júnior <img id="foto" src="img/jogador2.jpg"></li>
-                <li>Raphina <img id="foto" src="img/jogador3.jpg"></li>
-                <li>Marquinhos <img id="foto" src="img/jogador4.jpg"></li>
-                <li>Gabriel Martinelli <img id="foto" src="img/jogador5.jpg"></li>
-            </ol>
-        </section>
-        <section id="agenda">
+        <main class="main-content">
+            <section id="convocados" class="content-section active">
+               <h3>Convocados</h3>
+               <ol class="convocados">
+                    <li>Neymar <img id="foto" src="img/jogador1.jpg"></li>
+                    <li>Vinícius Júnior <img id="foto" src="img/jogador2.jpg"></li>
+                    <li>Raphinha <img id="foto" src="img/jogador3.jpg"></li>
+                    <li>Marquinhos <img id="foto" src="img/jogador4.jpg"></li>
+                    <li>Gabriel Martinelli <img id="foto" src="img/jogador5.jpg"></li>
+              </ol>
+          </section>
+          <section id="agenda" class="content-section">
+            <h3>Agenda</h3>
+            <p>Conteúdo da agenda aqui</p>
+          </section>
+          <section id="form" class="content-section">
+            <h3>Formulário</h3>
+            <p>Conteúdo do formulário aqui</p>
+          </section>
+     </main>
+    </div>
 
-        </section>
-        <section id="form">
-            
-        </section>
-    </main>
-
-    <footer>
-
-    </footer>
+      <footer></footer>
+    </div>
 </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
